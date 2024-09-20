@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                
+                <li><a href="features.html">Features</a></li>
+                
+        </nav>
+    </header>
+    <div class="login-container">
+        <div class="welcome-section">
+            <div class="image">
+                <img src="welcome.jpg" alt="Phone Icon" >
+                <p>WE PROVIDE SECURE LOGIN!</p>
+            </div>
+        </div>
+        <div class="login-section">
+            <h2>CSR COLLABORATION HUB</h2>
+            <form id="loginForm" onsubmit="return handleSubmit(event)">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <span id="togglePassword" class="toggle-password">Show</span>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="login-button">LOGIN</button>
+                <div id="successMessage" class="success-message"></div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
